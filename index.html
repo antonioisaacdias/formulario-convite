@@ -11,7 +11,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <aside></aside>
-    <main></main>
+    <aside>
+        <div class="aside-container">
+            <div>
+                <img src="assets/Logo.svg" alt="">
+                <h1>Festive</h1>
+                <p>Crie um convite digital para o seu evento</p>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="main-container">
+            <h2>Crie seu convite</h2>
+            <form action="">
+                <fieldset>
+                    <legend>
+                        <img src="assets/icons/calendar(1).svg" alt="">
+                        <strong>Sobre o evento</strong>
+                    </legend>
+                    <div class="imput-wrapper">
+                        <label for="title">Título</label>
+                        <input type="text" id="title" name="title">
+                    </div>
+                    <div class="imput-wrapper">
+                        <label for="start">Início</label>
+                        <input ype="datetime"  id="start" name="start">
+                    </div>
+                    <div class="imput-wrapper">
+                        <label for="end">Fim</label>
+                        <input type="datetime" id="end" name="end">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
 </body>
 </html>

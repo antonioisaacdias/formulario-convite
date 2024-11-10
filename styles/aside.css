@@ -1,0 +1,30 @@
+aside {
+    .aside-container {
+        background-image: url(../assets/Background.png);
+        background-repeat: none;
+        background-size: cover;
+        border-radius: .75rem;
+        margin-block: .75rem;
+        margin-inline: 1.25rem 4.4375rem;
+        height: 45.5rem;
+        width: 25rem;
+        div {
+            margin-inline: 2rem;
+            padding-top: 2rem;
+            img {
+                width: 2.865625rem;
+                margin-bottom: 1rem;
+            }
+            h1 {
+                font: var(--logo);
+                color: var(--pink);
+                margin-bottom: .25rem;
+            }
+
+            p {
+                font: 300 1rem var(--font-family-open-sans);
+                color: var(--text-heading);
+            }
+        }
+    }
+}
