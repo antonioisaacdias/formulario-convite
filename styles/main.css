@@ -1,0 +1,104 @@
+main {
+    & > .main-container {
+        margin-top: 1.25rem;
+        margin-block: 1.25rem;
+        border-radius: .75rem;
+        background-color: var(--shape-body);
+        min-width: 51.25rem;
+        padding: 5rem 8.125rem;
+
+        h2 {
+            font: var(--heading-md);
+            margin-bottom: 2.5rem;
+        }
+
+        form {
+            display: grid;
+            gap: 3rem;
+            fieldset{
+                padding-top: 1.5rem;
+                gap: 1rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                border: none;
+                legend {
+                    display: flex;
+                    align-items: center;
+                    gap: .75rem;
+                }
+            }
+        }
+    }
+}
+
+.input-wrapper {
+    display: grid;
+    gap: .75rem;
+
+    label {
+        font: var(--body-sm);
+        color: var(--text-body);
+    }
+}
+
+.type-slider{
+    display: grid;
+    height: 3.125rem;
+    background-color: var(--input-base);
+    border-radius: .5rem;
+    border: 1px solid var(--input-stroke);
+    grid-template-columns: 1fr 1fr;
+    .radio {
+        position: relative;
+        margin: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: .25rem;
+        label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+        }
+        input {
+            cursor: pointer;
+            inset: 0;
+            opacity: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        &:has(:checked) {
+            background-color: var(--shape-button);
+            label {
+                font-weight: 600;
+                color: var(--text-heading);
+                svg {
+                    fill: var(--brand-light);
+                    stroke: var(--brand-light);
+                    stroke-width: .02rem;
+                }
+            }
+        }
+    }
+}
+
+input, textarea {
+    font: var(--body-md);
+    color: var(--text-body);
+    padding: .8125rem 1rem;
+    appearance: none;
+    background-color: var(--input-base);
+    border-radius: .5rem;
+    border: 1px solid var(--input-stroke);
+
+    &:hover, &:focus-within {
+        outline: 1px solid var(--brand-light);
+    }
+}
+
+textarea {
+    height: 8.5rem;
+}

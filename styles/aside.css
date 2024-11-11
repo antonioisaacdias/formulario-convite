@@ -1,10 +1,10 @@
 aside {
-    .aside-container {
+    & > .aside-container {
         background-image: url(../assets/Background.png);
         background-repeat: none;
         background-size: cover;
         border-radius: .75rem;
-        margin-block: .75rem;
+        margin-block: 1.25rem;
         margin-inline: 1.25rem 4.4375rem;
         height: 45.5rem;
         width: 25rem;

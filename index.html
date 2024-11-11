@@ -24,23 +24,74 @@
         <div class="main-container">
             <h2>Crie seu convite</h2>
             <form action="">
-                <fieldset>
+                <fieldset >
                     <legend>
                         <img src="assets/icons/calendar(1).svg" alt="">
                         <strong>Sobre o evento</strong>
                     </legend>
-                    <div class="imput-wrapper">
+                    <div class="input-wrapper grid-cols-2">
                         <label for="title">Título</label>
                         <input type="text" id="title" name="title">
                     </div>
-                    <div class="imput-wrapper">
+                    <div class="input-wrapper grid-cols-1">
                         <label for="start">Início</label>
                         <input ype="datetime"  id="start" name="start">
                     </div>
-                    <div class="imput-wrapper">
+                    <div class="input-wrapper grid-cols-1">
                         <label for="end">Fim</label>
                         <input type="datetime" id="end" name="end">
                     </div>
+                    <div class="input-wrapper grid-cols-1">
+                        <label for="text">Tipo</label>
+                        <div class="type-slider">
+                            <div class="radio">
+                                <label for="tipo">
+                                    <img src="assets/icons/building-default.svg" alt="">
+                                    Presencial
+
+                                </label>
+                                <input type="radio" name="tipo" id="tipo" value="presencial" checked>
+                            </div>
+                            <div class="radio">
+                                <label for="tipo">
+                                    <img src="assets/icons/video-default.svg" alt="">
+                                    Online
+                                </label>
+                                <input type="radio" name="tipo" id="tipo" value ="online">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrapper grid-cols-1">
+                        <label for="local">Local</label>
+                        <input type="datetime" id="local" name="local">
+                    </div>
+                    <div class="input-wrapper grid-cols-2">
+                        <label for="descricao">Descrição</label>
+                        <textarea name="descricao" id="descricao"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <img src="assets/icons/paintbrush-vertical.svg" alt="">
+                        <strong>Personalização</strong>
+                    </legend>
+                    <div class="input-wrapper grid-cols-2">
+                        <label for="color">Cor principal</label>
+                        <div class="radio-wrapper">
+                            <input type="radio" id="color" name="coloer" value="brand-light">
+                            <input type="radio" id="color" name="coloer" value="brand-light">
+                            <input type="radio" id="color" name="coloer" value="brand-light">
+                            <input type="radio" id="color" name="coloer" value="brand-light">
+                            <input type="radio" id="color" name="coloer" value="brand-light">
+                            <input type="radio" id="color" name="coloer" value="brand-light">
+                            <input type="radio" id="color" name="coloer" value="brand-light">
+                            <input type="radio" id="color" name="coloer" value="brand-light">
+                            <input type="radio" id="color" name="coloer" value="brand-light">
+                            <input type="radio" id="color" name="coloer" value="brand-light">
+                            <input type="radio" id="color" name="coloer" value="brand-light">
+                        </div>
+                    </div>
+                <div class="input-wrapper"></div>
                 </fieldset>
             </form>
         </div>
