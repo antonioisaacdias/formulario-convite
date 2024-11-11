@@ -14,7 +14,7 @@
     <aside>
         <div class="aside-container">
             <div>
-                <img src="assets/Logo.svg" alt="">
+                <img src="assets/Logo.svg" alt="logo da empresa Festive">
                 <h1>Festive</h1>
                 <p>Crie um convite digital para o seu evento</p>
             </div>
@@ -24,22 +24,22 @@
         <div class="main-container">
             <h2>Crie seu convite</h2>
             <form action="">
-                <fieldset >
+                <fieldset id="sobre">
                     <legend>
                         <img src="assets/icons/calendar(1).svg" alt="">
                         <strong>Sobre o evento</strong>
                     </legend>
                     <div class="input-wrapper grid-cols-2">
                         <label for="title">Título</label>
-                        <input type="text" id="title" name="title">
+                        <input type="text" id="title" name="title" placeholder="Nome do evento">
                     </div>
                     <div class="input-wrapper grid-cols-1">
                         <label for="start">Início</label>
-                        <input ype="datetime"  id="start" name="start">
+                        <input type="datetime-local"  id="start" name="start">
                     </div>
                     <div class="input-wrapper grid-cols-1">
                         <label for="end">Fim</label>
-                        <input type="datetime" id="end" name="end">
+                        <input type="datetime-local" id="end" name="end">
                     </div>
                     <div class="input-wrapper grid-cols-1">
                         <label for="text">Tipo</label>
@@ -63,35 +63,136 @@
                     </div>
                     <div class="input-wrapper grid-cols-1">
                         <label for="local">Local</label>
-                        <input type="datetime" id="local" name="local">
+                        <input type="datetime" id="local" name="local" placeholder="Link ou endereço">
                     </div>
                     <div class="input-wrapper grid-cols-2">
                         <label for="descricao">Descrição</label>
-                        <textarea name="descricao" id="descricao"></textarea>
+                        <textarea name="descricao" id="descricao" placeholder="Escvreva sobre os detalhes do evento"></textarea>
                     </div>
                 </fieldset>
-                <fieldset>
+                <fieldset id="personalizacao">
                     <legend>
                         <img src="assets/icons/paintbrush-vertical.svg" alt="">
                         <strong>Personalização</strong>
                     </legend>
-                    <div class="input-wrapper grid-cols-2">
+                    <div class="input-wrapper grid-cols-3">
                         <label for="color">Cor principal</label>
-                        <div class="radio-wrapper">
-                            <input type="radio" id="color" name="coloer" value="brand-light">
-                            <input type="radio" id="color" name="coloer" value="brand-light">
-                            <input type="radio" id="color" name="coloer" value="brand-light">
-                            <input type="radio" id="color" name="coloer" value="brand-light">
-                            <input type="radio" id="color" name="coloer" value="brand-light">
-                            <input type="radio" id="color" name="coloer" value="brand-light">
-                            <input type="radio" id="color" name="coloer" value="brand-light">
-                            <input type="radio" id="color" name="coloer" value="brand-light">
-                            <input type="radio" id="color" name="coloer" value="brand-light">
-                            <input type="radio" id="color" name="coloer" value="brand-light">
-                            <input type="radio" id="color" name="coloer" value="brand-light">
+                        <div class="color-radio-wrapper">
+                            <input type="radio" id="color" name="color" value="brand-light">
+                            <input type="radio" id="color" name="color" value="navy">
+                            <input type="radio" id="color" name="color" value="purple">
+                            <input type="radio" id="color" name="color" value="fuschia">
+                            <input type="radio" id="color" name="color" value="pink">
+                            <input type="radio" id="color" name="color" value="danger">
+                            <input type="radio" id="color" name="color" value="orange">
+                            <input type="radio" id="color" name="color" value="yellow">
+                            <input type="radio" id="color" name="color" value="lime">
+                            <input type="radio" id="color" name="color" value="green">
+                            <input type="radio" id="color" name="color" value="cyan">
                         </div>
                     </div>
-                <div class="input-wrapper"></div>
+                    <div class="input-tema grid-cols-3">
+                        <label for="tema">Tema do evento</label>
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <img src="assets/images/aniversario.png" alt="">
+                                <label for="">Aniversário</label>
+                                <input type="radio"
+                                name="tema" id="tema" value="aniversario">
+                            </div>
+                            <div class="card">
+                                <img src="assets/images/infantil.png" alt="">
+                                <label for="">Infantil</label>
+                                <input type="radio"
+                                name="tema" id="tema" value="infantil">
+                            </div>
+                            <div class="card">
+                                <img src="assets/images/formatura.png" alt="">
+                                <label for="">Formatura</label>
+                                <input type="radio"
+                                name="tema" id="tema" value="formatura">
+                            </div>
+                            <div class="card">
+                                <img src="assets/images/casamento.png" alt="">
+                                <label for="">Casamento</label>
+                                <input type="radio"
+                                name="tema" id="tema" value="casamento">
+                            </div>
+                            <div class="card">
+                                <img src="assets/images/cha-de-bb.png" alt="">
+                                <label for="">Chá de bebê</label>
+                                <input type="radio"
+                                name="tema" id="tema" value="cha-de-bebe">
+                            </div>
+                            <div class="card">
+                                <img src="assets/images/cha-de-panela.png" alt="">
+                                <label for="">Chá de panela</label>
+                                <input type="radio"
+                                name="tema" id="tema" value="cha-de-panela">
+                            </div>
+                            <div class="card">
+                                <img src="assets/images/carnaval.png" alt="">
+                                <label for="">Carnaval</label>
+                                <input type="radio"
+                                name="tema" id="tema" value="carnaval">
+                            </div>
+                            <div class="card">
+                                <img src="assets/images/pascoa.png" alt="">
+                                <label for="">Páscoa</label>
+                                <input type="radio"
+                                name="tema" id="tema" value="pascoa">
+                            </div>
+                            <div class="card">
+                                <img src="assets/images/sao-joao.png" alt="">
+                                <label for="">São João</label>
+                                <input type="radio"
+                                name="tema" id="tema" value="sao-joao">
+                            </div>
+                            <div class="card">
+                                <img src="assets/images/halloween.png" alt="">
+                                <label for="">Halloween</label>
+                                <input type="radio"
+                                name="tema" id="tema" value="halloween">
+                            </div>
+                            <div class="card">
+                                <img src="assets/images/natal.png" alt="">
+                                <label for="">Natal</label>
+                                <input type="radio"
+                                name="tema" id="tema" value="natal">
+                            </div>
+                            <div class="card">
+                                <img src="assets/images/outro.png" alt="">
+                                <label for="">Outro</label>
+                                <input type="radio"
+                                name="tema" id="tema" value="outro">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="estilo">Estilo</label>
+                        <div class="switch-wrapper">
+                            <div class="switch">
+                                <div class="radio">
+                                    <input type="radio" name="estilo" id="estilo" value="escuro" checked>
+                                    <input type="radio" name="estilo" id="estilo" value="claro">
+                                </div>
+                                <span class="switch-ball"></span>
+                            </div>
+                            <label for="estilo">Escuro</label>
+                        </div>
+                    </div>
+                    <div class="input-wrapper grid-cols-2">
+                        <label for="foto">Foto de capa</label>
+                        <div class="file-wrapper">
+                            <span class="file-button">
+                                <img src="assets/icons/upload.svg" alt="">
+                                Selecionar
+                            </span>
+                            <p>Nenhum arquivo selecionado</p>
+                            <input type="file" id="foto" name="foto">
+                        </div>
+
+                    </div>
                 </fieldset>
             </form>
         </div>
