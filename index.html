@@ -194,6 +194,54 @@
 
                     </div>
                 </fieldset>
+                <fieldset id="dados">
+                    <legend>
+                        <img src="assets/icons/contact.svg" alt="brand-light">
+                        <strong>Dados para contato</strong>
+                    </legend>
+                    <div class="input-wrapper grid-cols-2">
+                        <label for="Nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                    </div>
+                    <div class="input-wrapper grid-cols-1">
+                        <label for="emai">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" placeholder="(99)99999-9999" id="telefone">
+                    </div>
+                </fieldset>
+                <fieldset id="checkbox-terms">
+                    <div class="checkbox-wrapper">
+                        <span class="checkbox">
+                            <input type="checkbox" name="terms" id="terms">
+                        </span>
+                        <label for="terms">
+                            Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong>.
+                        </label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <span class="checkbox">
+                            <input type="checkbox" name="email-promo" id="email-promo">
+                        </span>
+                        <label for="email-promo">
+                            Aceito receber atualizações e promoções por e-mail.
+                        </label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <span class="checkbox">
+                            <input type="checkbox" name="sms-promo" id="sms-promo">
+                        </span>
+                        <label for="sms-promo">
+                            Aceito receber atualizações e promoções por SMS.
+                        </label>
+                    </div>
+                </fieldset>
+                <button type="submit">
+                    <img src="assets/icons/ticket.svg" alt="">
+                    Gerar convite
+                </button>
             </form>
         </div>
     </main>
